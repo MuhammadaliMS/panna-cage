@@ -262,6 +262,8 @@ body.touch #camBtn.on{background:var(--teal)}
   #bottom{justify-content:center}
 }
 
+#card .hub{display:inline-block;margin:0 0 12px;font:700 11px var(--pixel);letter-spacing:.1em;color:var(--teal);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+#card .hub:hover{color:var(--red)}
 </style>
 
 <canvas id="c" tabindex="0" aria-label="Street football cage diorama"></canvas>
@@ -1403,6 +1405,7 @@ function showIntro() {
   setState('intro'); placeIdle();
   const rec = recLine(locId);
   $('card').innerHTML = `
+    <a class="hub" href="https://muhammadalims.github.io/">← ALL STREET GAMES</a>
     <h2>PANNA <span>CAGE</span></h2>
     <p class="lede">1v1 street football. Walls are in play, first to ${TARGET} wins, and a nutmeg hurts more than a goal.</p>
     <h3>WHERE</h3>
